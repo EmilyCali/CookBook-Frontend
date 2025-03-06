@@ -176,7 +176,7 @@ var app = angular.module('cookbook_app', []);
         //console.log(response + "created quilt block");
         //if 401 error message please login
         if (response.data.status == 422) {
-        this.error = "Please Login to create a quilt";
+        this.error = "Please Login to create a recipe";
       } else {
         this.recipe = response.data.recipe;
         this.recipeFormData = {};
